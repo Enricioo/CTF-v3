@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"DataPack ","color":"#00D328"},{"text":"CTF v.3 ","color":"red"},{"text":"caricato! ","color":"#00A2FF"}]

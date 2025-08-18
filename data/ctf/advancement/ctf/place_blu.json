@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:blue_banner"
+    },
+    "title": "Eroe dei Rossi",
+    "description": "Sii colui che ha rubato e posizionato lo stendardo blu al centro mappa. Bel lavoro!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "ctf:ctf/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+execute as @s[tag=bowmen] run function ctf:classes/equip/bowmen
+execute as @s[tag=farmer] run function ctf:classes/equip/farmer
+execute as @s[tag=fisher] run function ctf:classes/equip/fisher
+execute as @s[tag=ghost] run function ctf:classes/equip/ghost
+execute as @s[tag=miner] run function ctf:classes/equip/miner
+execute as @s[tag=runner] run function ctf:classes/equip/runner
+execute as @s[tag=seer] run function ctf:classes/equip/seer
+execute as @s[tag=warrior] run function ctf:classes/equip/warrior
+scoreboard players set @s deathsDummy 0

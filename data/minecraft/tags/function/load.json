@@ -1,0 +1,7 @@
+{
+    "values": [
+    "ctf:back/load",
+    "ctf:back/scoreboard",
+    "ctf:back/var_init"
+    ]
+}

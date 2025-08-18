@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:red_banner"
+    },
+    "title": "Eroe dei Blu",
+    "description": "Sii colui che ha rubato e posizionato lo stendardo rosso al centro mappa. Bel lavoro!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "ctf:ctf/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

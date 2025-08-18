@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"-30:00- ","color":"gold"},{"text":"Stop alla tregua! Da questo momento è abilitato il PVP tra team. Ogni 15 minuti verrà generato un airdrop ricco di risorse, state allerta!"}]
+execute at @a run playsound minecraft:entity.firework_rocket.launch master @a

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "ctf:equipment_high",
+          "weight": 1,
+          "functions": []
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "ctf:rare_items",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "functions": []
+}
