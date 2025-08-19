@@ -7,3 +7,4 @@ execute if score #board gameState matches 2 run function ctf:classes/passives
 execute if score #board gameState matches 2 run function ctf:classes/potions
 execute if score #board gameState matches 2 run function ctf:time/clock_bar
 execute if score #board gameState matches 2 run function ctf:time/timer
+execute if score #board gameState matches 2 run function ctf:dialogues/dialogues
