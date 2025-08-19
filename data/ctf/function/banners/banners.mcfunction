@@ -1,9 +1,9 @@
 #Banner Team GREEN
-execute positioned -708 62 -23 if block ~ ~ ~ minecraft:green_banner as @p[team=yellow,distance=..0.5] run function ctf:banners/take_green
-execute positioned -708 62 -23 as @p[team=green,distance=..0.5] if items entity @s weapon.* minecraft:green_banner run function ctf:banners/reset_green
+execute positioned -709 62 -24 if block ~ ~ ~ minecraft:green_banner as @p[team=!green,distance=..0.5] run function ctf:banners/take_green
+execute positioned -709 62 -24 as @p[team=green,distance=..0.5] if items entity @s weapon.* minecraft:green_banner run function ctf:banners/reset_green
 
 #Banner Team PINK
-execute positioned 64 62 -611 if block ~ ~ ~ minecraft:red_banner as @p[team=green,distance=..0.5] run function ctf:banners/take_pink
+execute positioned 64 62 -611 if block ~ ~ ~ minecraft:red_banner as @p[team=!pink,distance=..0.5] run function ctf:banners/take_pink
 execute positioned 64 62 -611 as @p[team=pink,distance=..0.5] if items entity @s weapon.* minecraft:pink_banner run function ctf:banners/reset_pink
 
 #Banner Team YELLOW

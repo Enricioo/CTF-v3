@@ -1,14 +1,8 @@
 #Back
-scoreboard players set #board gameState 0
+scoreboard players set #board gameState 2
 scoreboard players set @a deathsDummy 0
 
 #Stendardi
-scoreboard players set #board isGreenAttacked 0
-scoreboard players set #board isPinkAttacked 0
-scoreboard players set #board isYellowAttacked 0
-scoreboard players set #board isGreenCarring 0
-scoreboard players set #board isPinkCarring 0
-scoreboard players set #board isYellowCarring 0
 scoreboard players set #board canGreenRespawn 1
 scoreboard players set #board canPinkRespawn 1
 scoreboard players set #board canYellowRespawn 1
