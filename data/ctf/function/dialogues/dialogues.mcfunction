@@ -12,9 +12,10 @@ execute positioned 549 64 565 if score #board VegetaTaken matches 0 as @a[distan
 execute positioned 549 64 565 if score #board VegetaTaken matches 0 as @a[distance=..6] run tellraw @s {"text":"Vegeta: Non la meriti moccioso, però potrebbe tornarti utile. Ottieni: Spada in diamante!","color":"gold","bold":true}
 execute positioned 549 64 565 if score #board VegetaTaken matches 0 as @a[distance=..6] run scoreboard players set #board VegetaTaken 1
 
-execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[scores={VegetaTalked=0},distance=..6] run tellraw @s {"text":"Vegeta: Ho già provveduto, non ho altro da darti!","color":"gold","bold":true}
-execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[scores={VegetaTalked=0},distance=..6] run scoreboard players set @s VegetaTalked 1
-execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[scores={VegetaTalked=1},distance=6..] run scoreboard players set @s VegetaTalked 0
+execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[distance=6..] run tag @s add vegetaDone
+execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[scores={VegetaTalked=0},distance=..6,tag=vegetaDone] run tellraw @s {"text":"Vegeta: Ho già provveduto, non ho altro da darti!","color":"gold","bold":true}
+execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[scores={VegetaTalked=0},distance=..6,tag=vegetaDone] run scoreboard players set @s VegetaTalked 1
+execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[scores={VegetaTalked=1},distance=6..,tag=vegetaDone] run scoreboard players set @s VegetaTalked 0
 
 
 #Dodoria

@@ -21,6 +21,17 @@ team modify green friendlyFire true
 team modify pink friendlyFire true
 team modify yellow friendlyFire true
 
+#Dialogues
+scoreboard players set @a VegetaNoticed 0
+scoreboard players set @a VegetaTalked 0
+scoreboard players set #board VegetaTaken 0
+tag @a remove vegetaDone
+
+scoreboard players set @a DodoriaNoticed 0
+scoreboard players set @a DodoriaTalked 0
+scoreboard players set #board DodoriaTaken 0
+tag @a remove DodoriaDone
+
 #Advancements
 scoreboard players set #board canFakeIronman 1
 scoreboard players set #board ironmanPoll 0
