@@ -1,8 +1,4 @@
 #Vegeta
-scoreboard objectives add VegetaNoticed dummy
-scoreboard objectives add VegetaTaken dummy
-scoreboard objectives add VegetaTalked dummy
-
 execute positioned 549 64 565 as @a[scores={VegetaNoticed=0},distance=..50] run title @s title {"text":"Vegeta è vicino!","color":"red","bold":true}
 execute positioned 549 64 565 as @a[scores={VegetaNoticed=0},distance=..50] run scoreboard players set @s VegetaNoticed 1
 execute positioned 549 64 565 as @a[scores={VegetaNoticed=1},distance=50..] run scoreboard players set @s VegetaNoticed 0
@@ -19,10 +15,6 @@ execute positioned 549 64 565 if score #board VegetaTaken matches 1 as @a[scores
 
 
 #Dodoria
-scoreboard objectives add DodoriaNoticed dummy
-scoreboard objectives add DodoriaTaken dummy
-scoreboard objectives add DodoriaTalked dummy
-
 execute positioned 381 106 83 as @a[scores={DodoriaNoticed=0},distance=..50] run title @s title {"text":"Dodoria è vicino!","color":"red","bold":true}
 execute positioned 381 106 83 as @a[scores={DodoriaNoticed=0},distance=..50] run scoreboard players set @s DodoriaNoticed 1
 execute positioned 381 106 83 as @a[scores={DodoriaNoticed=1},distance=50..] run scoreboard players set @s DodoriaNoticed 0

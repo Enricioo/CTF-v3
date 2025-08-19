@@ -10,17 +10,6 @@ scoreboard players set #board isGreenStolen 0
 scoreboard players set #board isPinkStolen 0
 scoreboard players set #board isYellowStolen 0
 
-#Statistics
-scoreboard players reset @a deaths
-scoreboard players reset @a damageTaken
-scoreboard players reset @a damageTakenAB
-scoreboard players reset @a kills
-
-#Teams
-team modify green friendlyFire true
-team modify pink friendlyFire true
-team modify yellow friendlyFire true
-
 #Dialogues
 scoreboard players set @a VegetaNoticed 0
 scoreboard players set @a VegetaTalked 0
@@ -31,6 +20,17 @@ scoreboard players set @a DodoriaNoticed 0
 scoreboard players set @a DodoriaTalked 0
 scoreboard players set #board DodoriaTaken 0
 tag @a remove DodoriaDone
+
+#Statistics
+scoreboard players reset @a deaths
+scoreboard players reset @a damageTaken
+scoreboard players reset @a damageTakenAB
+scoreboard players reset @a kills
+
+#Teams
+team modify green friendlyFire true
+team modify pink friendlyFire true
+team modify yellow friendlyFire true
 
 #Advancements
 scoreboard players set #board canFakeIronman 1

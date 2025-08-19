@@ -31,6 +31,14 @@ scoreboard objectives add isGreenStolen dummy
 scoreboard objectives add isPinkStolen dummy
 scoreboard objectives add isYellowStolen dummy
 
+#Dialogues
+scoreboard objectives add VegetaNoticed dummy
+scoreboard objectives add VegetaTaken dummy
+scoreboard objectives add VegetaTalked dummy
+scoreboard objectives add DodoriaNoticed dummy
+scoreboard objectives add DodoriaTaken dummy
+scoreboard objectives add DodoriaTalked dummy
+
 #Statistics
 scoreboard objectives add health health
 scoreboard objectives add deaths deathCount
