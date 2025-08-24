@@ -26,8 +26,9 @@ execute positioned 381 106 83 if score #board DodoriaTaken matches 0 as @a[dista
 
 execute positioned 381 106 83 if score #board DodoriaTaken matches 1 as @a[distance=6..] run tag @s add dodoriaDone
 execute positioned 381 106 83 if score #board DodoriaTaken matches 1 as @a[scores={DodoriaTalked=0},distance=..6,tag=dodoriaDone] run tellraw @s {"text":"Dodoria: Ho già provveduto, non ho altro da darti!","color":"gold","bold":true}
-execute positioned 381 106 83 if score #board DodoriaTaken matches 1 as @a[scores={DodoriaTalked=0},distance=..6,tag=dodoriaDone ] run scoreboard players set @s DodoriaTalked 1
+execute positioned 381 106 83 if score #board DodoriaTaken matches 1 as @a[scores={DodoriaTalked=0},distance=..6,tag=dodoriaDone] run scoreboard players set @s DodoriaTalked 1
 execute positioned 381 106 83 if score #board DodoriaTaken matches 1 as @a[scores={DodoriaTalked=1},distance=6..,tag=dodoriaDone] run scoreboard players set @s DodoriaTalked 0
+
 
 #Zarbon
 execute positioned -688 67 -769 as @a[scores={ZarbonNoticed=0},distance=..50] run title @s title {"text":"Zarbon è vicino!","color":"red","bold":true}
@@ -60,6 +61,7 @@ execute positioned -586 116 -520 if score #board JuniorTaken matches 1 as @a[sco
 execute positioned -586 116 -520 if score #board JuniorTaken matches 1 as @a[scores={JuniorTalked=0},distance=..6,tag=juniorDone] run scoreboard players set @s JuniorTalked 1
 execute positioned -586 116 -520 if score #board JuniorTaken matches 1 as @a[scores={JuniorTalked=1},distance=6..,tag=juniorDone] run scoreboard players set @s JuniorTalked 0
 
+
 #Crilin
 execute positioned -611 103 412 as @a[scores={CrilinNoticed=0},distance=..50] run title @s title {"text":"Crilin è vicino!","color":"red","bold":true}
 execute positioned -611 103 412 as @a[scores={CrilinNoticed=0},distance=..50] run scoreboard players set @s CrilinNoticed 1
@@ -82,14 +84,14 @@ execute positioned 610 69 -257 as @a[scores={BulmaNoticed=0},distance=..50] run 
 execute positioned 610 69 -257 as @a[scores={BulmaNoticed=1},distance=50..] run scoreboard players set @s BulmaNoticed 0
 
 execute positioned 610 69 -257 if score #board BulmaTaken matches 0 as @a[distance=..6] run title @s title {"text":"Bulma: Ecco il tuo premio!","color":"red","bold":true}
-execute positioned 610 69 -257 if score #board BulmaTaken matches 0 as @a[distance=..6] run give @s potion:healing 1
+execute positioned 610 69 -257 if score #board BulmaTaken matches 0 as @a[distance=..6] run give @s minecraft:grass_block 5
 execute positioned 610 69 -257 if score #board BulmaTaken matches 0 as @a[distance=..6] run tellraw @s {"text":"Bulma: T-Tieni pure! Però vai via adesso! Ottieni: 1 Pozione di Cura!","color":"gold","bold":true}
 execute positioned 610 69 -257 if score #board BulmaTaken matches 0 as @a[distance=..6] run scoreboard players set #board BulmaTaken 1
 
 execute positioned 610 69 -257 if score #board BulmaTaken matches 1 as @a[distance=6..] run tag @s add bulmaDone
-execute positioned 610 69 -257 if score #board BulmaTaken matches 1 as @a[scores={BulmaTalked=0},distance=..6] run tellraw @s {"text":"Bulma: Ho già provveduto, non ho altro da darti!","color":"gold","bold":true}
-execute positioned 610 69 -257 if score #board BulmaTaken matches 1 as @a[scores={BulmaTalked=0},distance=..6] run scoreboard players set @s BulmaTalked 1
-execute positioned 610 69 -257 if score #board BulmaTaken matches 1 as @a[scores={BulmaTalked=1},distance=6..] run scoreboard players set @s BulmaTalked 0
+execute positioned 610 69 -257 if score #board BulmaTaken matches 1 as @a[scores={BulmaTalked=0},distance=..6,tag=bulmaDone] run tellraw @s {"text":"Bulma: Ho già provveduto, non ho altro da darti!","color":"gold","bold":true}
+execute positioned 610 69 -257 if score #board BulmaTaken matches 1 as @a[scores={BulmaTalked=0},distance=..6,tag=bulmaDone] run scoreboard players set @s BulmaTalked 1
+execute positioned 610 69 -257 if score #board BulmaTaken matches 1 as @a[scores={BulmaTalked=1},distance=6..,tag=bulmaDone] run scoreboard players set @s BulmaTalked 0
 
 
 #Beerus
@@ -98,7 +100,7 @@ execute positioned -274 87 405 as @a[scores={BeerusNoticed=0},distance=..50] run
 execute positioned -274 87 405 as @a[scores={BeerusNoticed=1},distance=50..] run scoreboard players set @s BeerusNoticed 0
 
 execute positioned -274 87 405 if score #board BeerusTaken matches 0 as @a[distance=..6] run title @s title {"text":"Beerus: Ecco il tuo premio!","color":"red","bold":true}
-execute positioned -274 87 405 if score #board BeerusTaken matches 0 as @a[distance=..6] run give @s potion:strength 1 
+execute positioned -274 87 405 if score #board BeerusTaken matches 0 as @a[distance=..6] run give @s minecraft:stone 44
 execute positioned -274 87 405 if score #board BeerusTaken matches 0 as @a[distance=..6] run tellraw @s {"text":"Beerus: Sparisci subito! Altrimenti sarà peggio per te. Ottieni: 1 Pozione di Forza!","color":"gold","bold":true}
 execute positioned -274 87 405 if score #board BeerusTaken matches 0 as @a[distance=..6] run scoreboard players set #board BeerusTaken 1
 
@@ -130,7 +132,7 @@ execute positioned 389 88 -681 as @a[scores={GohanNoticed=0},distance=..50] run 
 execute positioned 389 88 -681 as @a[scores={GohanNoticed=1},distance=50..] run scoreboard players set @s GohanNoticed 0
 
 execute positioned 389 88 -681 if score #board GohanTaken matches 0 as @a[distance=..6] run title @s title {"text":"Gohan: Ecco il tuo premio!","color":"red","bold":true}
-execute positioned 389 88 -681 if score #board GohanTaken matches 0 as @a[distance=..6] run give @s potion:speed 1
+execute positioned 389 88 -681 if score #board GohanTaken matches 0 as @a[distance=..6] run give @s minecraft:acacia_boat 2
 execute positioned 389 88 -681 if score #board GohanTaken matches 0 as @a[distance=..6] run tellraw @s {"text":"Gohan: Devo aiutare chi è nel bisogno… prendi questa. Ottieni: 1 Pozione di Velocità!","color":"gold","bold":true}
 execute positioned 389 88 -681 if score #board GohanTaken matches 0 as @a[distance=..6] run scoreboard players set #board GohanTaken 1
 
@@ -154,4 +156,3 @@ execute positioned 113 79 592 if score #board GokuTaken matches 1 as @a[distance
 execute positioned 113 79 592 if score #board GokuTaken matches 1 as @a[scores={GokuTalked=0},distance=..6,tag=gokuDone] run tellraw @s {"text":"Goku: Ho già provveduto, non ho altro da darti!","color":"gold","bold":true}
 execute positioned 113 79 592 if score #board GokuTaken matches 1 as @a[scores={GokuTalked=0},distance=..6,tag=gokuDone] run scoreboard players set @s GokuTalked 1
 execute positioned 113 79 592 if score #board GokuTaken matches 1 as @a[scores={GokuTalked=1},distance=6..,tag=gokuDone] run scoreboard players set @s GokuTalked 0
-
