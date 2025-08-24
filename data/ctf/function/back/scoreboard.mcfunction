@@ -38,6 +38,30 @@ scoreboard objectives add VegetaTalked dummy
 scoreboard objectives add DodoriaNoticed dummy
 scoreboard objectives add DodoriaTaken dummy
 scoreboard objectives add DodoriaTalked dummy
+scoreboard objectives add ZarbonNoticed dummy
+scoreboard objectives add ZarbonTaken dummy
+scoreboard objectives add ZarbonTalked dummy
+scoreboard objectives add JuniorNoticed dummy
+scoreboard objectives add JuniorTaken dummy
+scoreboard objectives add JuniorTalked dummy
+scoreboard objectives add CrilinNoticed dummy
+scoreboard objectives add CrilinTaken dummy
+scoreboard objectives add CrilinTalked dummy
+scoreboard objectives add BulmaNoticed dummy
+scoreboard objectives add BulmaTaken dummy
+scoreboard objectives add BulmaTalked dummy
+scoreboard objectives add BeerusNoticed dummy
+scoreboard objectives add BeerusTaken dummy
+scoreboard objectives add BeerusTalked dummy
+scoreboard objectives add MajinNoticed dummy
+scoreboard objectives add MajinTaken dummy
+scoreboard objectives add MajinTalked dummy
+scoreboard objectives add GohanNoticed dummy
+scoreboard objectives add GohanTaken dummy
+scoreboard objectives add GohanTalked dummy
+scoreboard objectives add GokuNoticed dummy
+scoreboard objectives add GokuTaken dummy
+scoreboard objectives add GokuTalked dummy
 
 #Statistics
 scoreboard objectives add health health
